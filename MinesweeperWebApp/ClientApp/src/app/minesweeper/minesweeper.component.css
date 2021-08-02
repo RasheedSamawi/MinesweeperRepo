@@ -1,0 +1,52 @@
+:host {
+  display: block;
+}
+
+label {
+  margin-right: 0.3rem;
+}
+
+.minesweeperPanel {
+  margin-top: 4rem;
+}
+
+.form-group {
+  float: left;
+  margin-right: 1rem;
+}
+
+
+.form-control {
+  display: inline-block;
+  width: auto;
+}
+
+.minesweeperPanel span {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  background-color: #B33771;
+  border-radius: 0.3rem;
+  margin: 0.25rem;
+  margin-left: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.bomb:after {
+  content: '\01F4A3';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.clearFix {
+  clear: both;
+}
+
+.validationError {
+  display: block;
+  font-size: .9rem;
+  color: #c23616;
+}
