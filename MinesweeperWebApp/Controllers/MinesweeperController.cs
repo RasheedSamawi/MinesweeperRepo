@@ -20,7 +20,7 @@ namespace MinesweeperWepApp.Controllers
         [HttpGet()]
         public async Task<IActionResult> GetPanel(int width, int height)
         {
-            if (width == 0 && height == 0)
+            if (width == 0 || height == 0)
                 return Ok(new List<RowResource>());
 
             IList<RowResource> rows = new List<RowResource>();
